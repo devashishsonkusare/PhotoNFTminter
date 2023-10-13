@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Component/Home/Home';
+import { createRoot } from "react-dom/client";
+import { BrowserRouter,Route,Routes } from "react-router-dom";
+import { useState } from 'react';
+import Navbar from './Component/Navbar/Navbar';
+
+import DisplayNft from './Component/DisplayNft/DisplayNft';
+const root = createRoot(document.getElementById("root"));
 
 function App() {
+  
+  const [address, setAddress] = useState(""); // Initialize address state
+  const [provider, setProvider] = useState("");
+  // Function to update the address in state
+  const updateAddress = (newAddress) => {
+    setAddress(newAddress);
+    console.log("ADDRESS Nav",address)
+  };
+  const updateProvider = (newProvider) => {
+    setProvider(newProvider)
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter basename="/">
+      <Navbar updateAddress={updateAddress} updateProvider={updateProvider} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<DisplayNft address={address} />} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

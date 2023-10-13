@@ -1,0 +1,578 @@
+.style-0 {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-1 {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    gap: 40px;
+    justify-content: center;
+    grid-auto-flow: row;
+    display: grid;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-2 {
+    gap: 24px;
+    justify-items: center;
+    grid-auto-flow: row;
+    display: grid;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-3 {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+    margin: 0px;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+    background: linear-gradient(to right, #AA0AFC, #D5D3F3, #007AEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.style-4 {
+    line-height: 20px;
+    margin: 0px;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+    color: white;
+}
+
+.style-5 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1024px;
+    width: 100%;
+    margin-top: 8px;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-6 {
+    margin-right: 20px;
+    margin-top: 1rem;
+    min-width: 320px;
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    max-width: 480px;
+    display: flex;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+
+.style-7 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+    gap: 1rem;
+    margin-left: 3rem;
+}
+@media (max-width: 768px) {
+    .style-7 {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 2rem;
+        /* 2 items in a row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .style-7 {
+        grid-template-columns: 1fr;
+        /* 1 item in a row for even smaller screens */
+    }
+}
+.style-8 {
+    transition-duration: 0.15s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --tw-shadow-color: rgba(0, 152, 253, .2);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 152, 253, 0.2) 0px 4px 6px -1px, rgba(0, 152, 253, 0.2) 0px 2px 4px -2px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 36px;
+    padding-right: 36px;
+    background-color: rgb(0, 152, 253);
+    border-radius: 9999px;
+    white-space: nowrap;
+    gap: 22px;
+    justify-content: end;
+    align-items: center;
+    grid-auto-flow: column;
+    appearance: none;
+    cursor: pointer;
+    display: grid;
+    background-image: none;
+    text-transform: none;
+    font-feature-settings: normal;
+    font-family: EuclidCircularA, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-variation-settings: normal;
+    margin: 0px;
+    padding: 15px 36px;
+    /* border: 0px solid rgb(255, 255, 255); */
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #b447eb, #2797ff) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    /* -webkit-mask-composite: destination-out; */
+    width: 15rem;
+}
+
+.style-9 {
+    --tw-shadow-color: rgba(24, 25, 27, .25);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(24, 25, 27, 0.25) 0px 20px 25px -5px, rgba(24, 25, 27, 0.25) 0px 8px 10px -6px;
+    color: rgb(0, 152, 253);
+    padding: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin-right: -15px;
+    border: 0px solid rgb(0, 152, 253);
+    box-sizing: border-box;
+}
+
+.style-10 {
+    width: 18px;
+    height: 18px;
+    display: block;
+    vertical-align: middle;
+    border: 0px solid rgb(0, 152, 253);
+    box-sizing: border-box;
+}
+
+.style-11 {
+    border: 0px solid rgb(0, 152, 253);
+    box-sizing: border-box;
+}
+
+.style-12 {
+    border: 0px solid rgb(0, 152, 253);
+    box-sizing: border-box;
+}
+
+.style-13 {
+    color: rgb(113, 115, 124);
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 20px;
+    margin: 20px 0px 0px;
+    border: 0px solid rgb(113, 115, 124);
+    box-sizing: border-box;
+}
+
+.style-14 {
+    margin-top: 20px;
+    color: rgb(209, 129, 26);
+    padding: 20px;
+    background-color: rgb(255, 235, 196);
+    border-radius: 8px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    position: relative;
+    border: 0px solid rgb(209, 129, 26);
+    box-sizing: border-box;
+}
+
+.style-15 {
+    background-color: rgb(255, 213, 130);
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 40px;
+    display: flex;
+    border: 0px solid rgb(209, 129, 26);
+    box-sizing: border-box;
+}
+
+.style-16 {
+    font-size: 24px;
+    line-height: 32px;
+    display: block;
+    vertical-align: middle;
+    border: 0px solid rgb(209, 129, 26);
+    box-sizing: border-box;
+}
+
+.style-17 {
+    border: 0px solid rgb(209, 129, 26);
+    box-sizing: border-box;
+}
+
+.style-18 {
+    max-width: 320px;
+    padding-right: 20px;
+    padding-left: 8px;
+    flex-direction: column;
+    display: flex;
+    border: 0px solid rgb(209, 129, 26);
+    box-sizing: border-box;
+}
+
+.style-19 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px;
+    border: 0px solid rgb(209, 129, 26);
+    box-sizing: border-box;
+}
+
+.style-20 {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0px;
+    border: 0px solid rgb(209, 129, 26);
+    box-sizing: border-box;
+}
+
+.style-21 {
+    right: 16px;
+    transition-duration: 0.15s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: rgb(209, 129, 26);
+    appearance: none;
+    cursor: pointer;
+    top: 16px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    text-transform: none;
+    font-feature-settings: normal;
+    color: rgb(209, 129, 26);
+    font-family: EuclidCircularA, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 16px;
+    font-variation-settings: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid rgb(209, 129, 26);
+    box-sizing: border-box;
+}
+
+.style-22 {
+    display: block;
+    vertical-align: middle;
+    border: 0px solid rgb(209, 129, 26);
+    box-sizing: border-box;
+}
+
+.style-23 {
+    border: 0px solid rgb(209, 129, 26);
+    box-sizing: border-box;
+}
+
+.style-24 {
+    background-color: rgb(0, 0, 0);
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    position: relative;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-25 {
+    position: absolute;
+    z-index: 15;
+    inset: 16px 0px;
+    pointer-events: none;
+    width: 100%;
+    z-index: 15;
+    inset: 16px 0px;
+    pointer-events: none;
+    width: 100%;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-26 {
+    background-color: rgb(238, 238, 240);
+    border-radius: 16px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 456px;
+    display: flex;
+    position: relative;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-27 {
+    display: none;
+    justify-content: center;
+    min-width: 80%;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-28 {
+    transition-duration: 0.15s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --tw-shadow-color: rgba(0, 152, 253, .2);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 152, 253, 0.2) 0px 4px 6px -1px, rgba(0, 152, 253, 0.2) 0px 2px 4px -2px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 36px;
+    padding-right: 36px;
+    background-color: rgb(0, 152, 253);
+    border-radius: 9999px;
+    white-space: nowrap;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: column;
+    appearance: none;
+    cursor: pointer;
+    display: inline-grid;
+    background-image: none;
+    text-transform: none;
+    font-feature-settings: normal;
+    font-family: EuclidCircularA, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-variation-settings: normal;
+    margin: 0px;
+    padding: 15px 36px;
+    border: 0px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.style-29 {
+    --tw-shadow-color: rgba(24, 25, 27, .25);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(24, 25, 27, 0.25) 0px 20px 25px -5px, rgba(24, 25, 27, 0.25) 0px 8px 10px -6px;
+    color: rgb(0, 152, 253);
+    padding: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin-right: -15px;
+    border: 0px solid rgb(0, 152, 253);
+    box-sizing: border-box;
+}
+
+.style-30 {
+    width: 18px;
+    height: 18px;
+    display: block;
+    vertical-align: middle;
+    border: 0px solid rgb(0, 152, 253);
+    box-sizing: border-box;
+}
+
+.style-31 {
+    border: 0px solid rgb(0, 152, 253);
+    box-sizing: border-box;
+}
+
+.style-32 {
+    border: 0px solid rgb(0, 152, 253);
+    box-sizing: border-box;
+}
+
+.style-33 {
+    color: transparent;
+    opacity: 0.6;
+    opacity: 0.6;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    vertical-align: middle;
+    border: 0px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+}
+
+.style-34 {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    margin-bottom: 48px;
+    margin-top: 48px;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-35 {
+    width: 33.3333%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100px;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-36 {
+    display: inline;
+    vertical-align: middle;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-37 {
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-38 {
+    color: rgb(165, 167, 173);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 16px;
+    border: 0px solid rgb(165, 167, 173);
+    box-sizing: border-box;
+}
+
+.style-39 {
+    width: 33.3333%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100px;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-40 {
+    display: inline;
+    vertical-align: middle;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-41 {
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-42 {
+    color: rgb(165, 167, 173);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 16px;
+    border: 0px solid rgb(165, 167, 173);
+    box-sizing: border-box;
+}
+
+.style-43 {
+    width: 33.3333%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100px;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-44 {
+    display: inline;
+    vertical-align: middle;
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-45 {
+    border: 0px solid rgb(24, 25, 27);
+    box-sizing: border-box;
+}
+
+.style-46 {
+    color: rgb(165, 167, 173);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 16px;
+    border: 0px solid rgb(165, 167, 173);
+    box-sizing: border-box;
+}
+
+.image {
+    height: inherit;
+    width: inherit;
+
+}
+
+@media (orientation: portrait) {
+    .style-5 {
+        flex-direction: column;
+    }
+}
+.input{
+    border-style: solid;
+    border-color: aliceblue;
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 80%;
+    margin: 1rem;
+    
+}
+.address{
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .ReactModal__Content {
+        width: 90% !important;
+        /* Reduce the modal width for smaller screens */
+        max-width: 90%;
+        /* Set a maximum width for the modal */
+        margin: 0 auto;
+        /* Center the modal horizontally */
+    }
+
+    /* Adjust font size for smaller screens */
+    .ModalHeader h4 {
+        font-size: 18px;
+        /* Adjust the font size as needed */
+    }
+
+    .ModalContent p {
+        font-size: 16px;
+        /* Adjust the font size as needed */
+    }
+
+    .CloseModalButton {
+        top: 10px;
+        right: 10px;
+    }
+}
