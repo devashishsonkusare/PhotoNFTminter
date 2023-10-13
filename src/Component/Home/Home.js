@@ -62,7 +62,7 @@ const Home = () => {
   const [userAddress, setUserAddress] = useState('');
   const [transactionHashes, setTransactionHashes] = useState();
   const [tokenIds, setTokenIds] = useState();
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 const [resolveEns, setResolveEns] = useState();
   const mintedIn ="photoNFT" ;
   async function MintNft(selectedChain, chainData) {
