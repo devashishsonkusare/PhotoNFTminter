@@ -6,6 +6,7 @@ import styled from "styled-components";
 import { MdClose } from "react-icons/md";
 import Modal from "react-modal";
 import { ClipLoader, BarLoader } from "react-spinners";
+import LoaderModal from "./LoaderModal";
 
 import { Link } from "react-router-dom";
 const ethers = require("ethers");
@@ -63,7 +64,9 @@ const Home = () => {
   const [transactionHashes, setTransactionHashes] = useState();
   const [tokenIds, setTokenIds] = useState();
   const [show, setShow] = useState(false);
-const [resolveEns, setResolveEns] = useState();
+  const [resolveEns, setResolveEns] = useState();
+  const [loader, setLoader] = useState("")
+
   const mintedIn ="photoNFT" ;
   async function MintNft(selectedChain, chainData) {
     const formData = new FormData();
@@ -185,8 +188,8 @@ const [resolveEns, setResolveEns] = useState();
     setImage(null);
   };
   const handlePhotoNft = async () => {
+    setLoader(true)
     if (image) {
-      // Convert the base64 image data to a Blob
       const byteCharacters = atob(image.split(",")[1]);
       const byteNumbers = new Array(byteCharacters.length);
       for (let i = 0; i < byteCharacters.length; i++) {
@@ -197,25 +200,28 @@ const [resolveEns, setResolveEns] = useState();
       });
 
       const imageSizeInBytes = imageBlob.size;
-
       console.log(`Image size: ${imageSizeInBytes} bytes`);
+
       const formData = new FormData();
       formData.append("file", imageBlob);
 
       try {
         const response = await fetch("http://20.198.98.4:8000/cartoonify", {
-          mode: "no-cors",
-          method: "POST",
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Content-Type": "multipart/form-data",
-          },
+        method: "POST",
           body: formData,
         });
-
+        console.log("response",response)
+        console.log(response.body)
+        const blob = await response.blob();
+        const imageUrl = URL.createObjectURL(blob);
+        console.log("image ",imageUrl)
+        // Set the image URL to the state
+        setImage(imageUrl)
+       
+        console.log("Image sent and processed successfully");
         if (response.ok) {
+          setShow(true)
           console.log("Image sent and processed successfully");
-          setShow(false);
         } else {
           console.error(
             "Error during image processing:",
@@ -229,7 +235,9 @@ const [resolveEns, setResolveEns] = useState();
     } else {
       console.warn("No image to send. Take a photo first.");
     }
+setLoader(false)
   };
+
 
   const handleMinting = async () => {
     if (isMinting) {
@@ -297,7 +305,7 @@ const [resolveEns, setResolveEns] = useState();
           <div className="address">
             <h3 style={{ color: "white", marginTop: "1rem" }}>Address</h3>
             <input
-              placeholder="Address/ENS"
+              placeholder="Address"
               className="input"
                 onChange={(e) => setUserAddress(e.target.value)}
             />
@@ -566,6 +574,8 @@ const [resolveEns, setResolveEns] = useState();
           </ModalContent>
         </ModalWrapper>
       </Modal>
+      {loader && <LoaderModal />}
+
     </div>
   );
 };
